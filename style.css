@@ -1,0 +1,51 @@
+.card {
+    margin-top: 3px;
+}
+
+.navbar {
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+.sidebar {
+    top: 56px; /* Altura da navbar */
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scroll vertical se necessário */
+  }
+  
+  main {
+    padding-top: 70px; /* Altura da navbar */
+    margin-bottom: 70px; /* Espaço para o footer */
+  }
+  
+  @media (min-width: 768px) {
+    main {
+      margin-left: 200px; /* Largura do menu lateral */
+    }
+  }
+
+  body {
+    scroll-padding-top: -70px;
+  }
+
+  :target {
+    scroll-margin-top: 71px;
+  }
+
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Cor de fundo da navbar */
+    padding: 10px;
+    z-index: 1000; /* Valor alto para garantir que fique na frente da navbar */
+  }
+
+  
+  
+  
